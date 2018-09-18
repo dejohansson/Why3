@@ -48,7 +48,7 @@ end
 
 module Add
 
-  use import Nat
+  use Nat
   
   goal plus_ol: 
     forall n. O + n = n
@@ -107,9 +107,9 @@ end
 
 module Compare
 
-  use import Nat
-  (* use import Add *)
-  (* use import Inconsistency *)
+  use Nat
+  use Add
+  (* use Inconsistency *)
  
   inductive le nat nat = 
   | Le_n : forall n:nat. le n n
@@ -132,8 +132,8 @@ end
 
 
 module Sub
- use import Nat
- use import Compare
+ use Nat
+ use Compare
  
  function sub (n m:nat) : nat =
  match n, m with
