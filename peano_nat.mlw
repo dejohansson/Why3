@@ -141,11 +141,12 @@ module Sub
  | _, _ -> n
  end
  
- (*
  (* Assignment 3a *) 
  
- inductive sub_pr nat nat nat = 
- | (* your code here *)
+ inductive sub_pr nat nat nat = (* your code here *)
+ | sub_pr_1 : forall n m r:nat. sub_pr n m r -> sub_pr (S n) (S m) r
+ | sub_pr_2 : forall n:nat. sub_pr n O n
+ | sub_pr_3 : forall m:nat. sub_pr O m O
  
  
  (* 
@@ -153,6 +154,7 @@ module Sub
     inductive predicate sub_pr and the
     function sub
  *)
+ 
  
  lemma sub_equivalence:
   forall n m l. l = sub n m <-> sub_pr n m l
@@ -162,7 +164,7 @@ module Sub
     forall n m. sub n m <= n
  
  (* Assignment 3c *)   
- predicate (>=) (x y:nat) = (* your code here *)
+ predicate (>=) (x y:nat) = le y x (* your code here *)
   
  lemma sub_ge_nm:
     forall n m. n >= sub n m
@@ -170,7 +172,8 @@ module Sub
  (* Assignment 3d *)   
  predicate (<) (x y:nat) = le (S x) y 
  
- lemma sub_lt_nm:forall n m. ... -> sub n m < n
+ lemma sub_lt_nm:
+    forall n m. ((n <> O) /\ (m <> O)) -> sub n m < n
    
- *)
-end	
+ 
+end

@@ -34,14 +34,22 @@ module Imp_ex
 
 
   let rec ceval_ex (st:state) (c:com): state
-    (* diverges (* uncomment when actually diverging*) *)   
+    diverges (* uncomment when actually diverging*)   
     ensures { ceval st c result }
     =
     match c with
     | Cskip -> st
-    | Cassign id aexpr -> st
-    | Cseq c1 c2 -> st 
-    | Cif bexpr c1 c2 -> st
-    | Cwhile bexpr com -> st
+    | Cassign id aexpr -> st[id <- aeval_ex st aexpr]
+    | Cseq c1 c2 -> ceval_ex (ceval_ex st c1) c2
+    | Cif bexpr c1 c2 -> 
+      match beval_ex st bexpr with
+      | True -> ceval_ex st c1
+      | False -> ceval_ex st c2
+      end
+    | Cwhile bexpr com ->
+      match beval_ex st bexpr with
+      | True -> ceval_ex (ceval_ex st com) (Cwhile bexpr com)
+      | False -> st
+      end
     end
 end
