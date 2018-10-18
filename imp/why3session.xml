@@ -42,109 +42,109 @@
   <goal name="VC ifunf.0" expl="precondition">
   <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
   </goal>
-  <goal name="VC ifunf.1" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="154"/></proof>
+  <goal name="VC ifunf.1" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.02" steps="154"/></proof>
   </goal>
-  <goal name="VC ifunf.2" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="154"/></proof>
+  <goal name="VC ifunf.2" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.02" steps="154"/></proof>
   </goal>
-  <goal name="VC ifunf.3" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="154"/></proof>
-  </goal>
- </transf>
- </goal>
- <goal name="VC iimmf" expl="VC for iimmf">
- <transf name="split_vc" >
-  <goal name="VC iimmf.0" expl="precondition">
-  <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.12"/></proof>
-  </goal>
-  <goal name="VC iimmf.1" expl="precondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.26" steps="453"/></proof>
-  </goal>
-  <goal name="VC iimmf.2" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.06" steps="164"/></proof>
-  </goal>
-  <goal name="VC iimmf.3" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.06" steps="164"/></proof>
-  </goal>
-  <goal name="VC iimmf.4" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.24" steps="392"/></proof>
+  <goal name="VC ifunf.3" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.02" steps="154"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC iloadf" expl="VC for iloadf">
- <transf name="split_vc" >
-  <goal name="VC iloadf.0" expl="precondition">
-  <proof prover="2" timelimit="10" obsolete="true"><result status="valid" time="0.50"/></proof>
+ <goal name="VC iimmf" expl="VC for iimmf" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC iimmf.0" expl="precondition" proved="true">
+  <proof prover="2" memlimit="2000"><result status="valid" time="0.55"/></proof>
   </goal>
-  <goal name="VC iloadf.1" expl="precondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.22" steps="453"/></proof>
+  <goal name="VC iimmf.1" expl="precondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.26" steps="453"/></proof>
   </goal>
-  <goal name="VC iloadf.2" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.04" steps="164"/></proof>
+  <goal name="VC iimmf.2" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.06" steps="164"/></proof>
   </goal>
-  <goal name="VC iloadf.3" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.05" steps="164"/></proof>
+  <goal name="VC iimmf.3" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.06" steps="164"/></proof>
   </goal>
-  <goal name="VC iloadf.4" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.23" steps="392"/></proof>
-  </goal>
- </transf>
- </goal>
- <goal name="VC istoref" expl="VC for istoref">
- <transf name="split_vc" >
-  <goal name="VC istoref.0" expl="precondition">
-  <proof prover="4" obsolete="true"><result status="valid" time="0.38"/></proof>
-  </goal>
-  <goal name="VC istoref.1" expl="precondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.25" steps="453"/></proof>
-  </goal>
-  <goal name="VC istoref.2" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.05" steps="164"/></proof>
-  </goal>
-  <goal name="VC istoref.3" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.04" steps="164"/></proof>
-  </goal>
-  <goal name="VC istoref.4" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.21" steps="392"/></proof>
+  <goal name="VC iimmf.4" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.24" steps="392"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC ipushf" expl="VC for ipushf">
- <transf name="split_vc" >
-  <goal name="VC ipushf.0" expl="precondition">
-  <proof prover="4" obsolete="true"><result status="valid" time="0.42"/></proof>
+ <goal name="VC iloadf" expl="VC for iloadf" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC iloadf.0" expl="precondition" proved="true">
+  <proof prover="2" timelimit="10"><result status="valid" time="0.77"/></proof>
   </goal>
-  <goal name="VC ipushf.1" expl="precondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.26" steps="451"/></proof>
+  <goal name="VC iloadf.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.22" steps="453"/></proof>
   </goal>
-  <goal name="VC ipushf.2" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.11" steps="164"/></proof>
+  <goal name="VC iloadf.2" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.04" steps="164"/></proof>
   </goal>
-  <goal name="VC ipushf.3" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.09" steps="164"/></proof>
+  <goal name="VC iloadf.3" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.05" steps="164"/></proof>
   </goal>
-  <goal name="VC ipushf.4" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.24" steps="392"/></proof>
+  <goal name="VC iloadf.4" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.23" steps="392"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC ipopf" expl="VC for ipopf">
- <transf name="split_vc" >
-  <goal name="VC ipopf.0" expl="precondition">
-  <proof prover="4" obsolete="true"><result status="valid" time="0.33"/></proof>
+ <goal name="VC istoref" expl="VC for istoref" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC istoref.0" expl="precondition" proved="true">
+  <proof prover="4"><result status="valid" time="0.38"/></proof>
   </goal>
-  <goal name="VC ipopf.1" expl="precondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.31" steps="520"/></proof>
+  <goal name="VC istoref.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.25" steps="453"/></proof>
   </goal>
-  <goal name="VC ipopf.2" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.07" steps="164"/></proof>
+  <goal name="VC istoref.2" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.05" steps="164"/></proof>
   </goal>
-  <goal name="VC ipopf.3" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.09" steps="164"/></proof>
+  <goal name="VC istoref.3" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.04" steps="164"/></proof>
   </goal>
-  <goal name="VC ipopf.4" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.23" steps="392"/></proof>
+  <goal name="VC istoref.4" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.21" steps="392"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC ipushf" expl="VC for ipushf" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC ipushf.0" expl="precondition" proved="true">
+  <proof prover="4"><result status="valid" time="0.42"/></proof>
+  </goal>
+  <goal name="VC ipushf.1" expl="precondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.26" steps="451"/></proof>
+  </goal>
+  <goal name="VC ipushf.2" expl="postcondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.11" steps="164"/></proof>
+  </goal>
+  <goal name="VC ipushf.3" expl="postcondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.09" steps="164"/></proof>
+  </goal>
+  <goal name="VC ipushf.4" expl="postcondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.24" steps="392"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC ipopf" expl="VC for ipopf" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC ipopf.0" expl="precondition" proved="true">
+  <proof prover="4"><result status="valid" time="0.49"/></proof>
+  </goal>
+  <goal name="VC ipopf.1" expl="precondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.31" steps="520"/></proof>
+  </goal>
+  <goal name="VC ipopf.2" expl="postcondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.07" steps="164"/></proof>
+  </goal>
+  <goal name="VC ipopf.3" expl="postcondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.09" steps="164"/></proof>
+  </goal>
+  <goal name="VC ipopf.4" expl="postcondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.23" steps="392"/></proof>
   </goal>
  </transf>
  </goal>
@@ -161,36 +161,36 @@
    </goal>
   </transf>
   </goal>
-  <goal name="VC iaddrf.1" expl="precondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.27" steps="455"/></proof>
+  <goal name="VC iaddrf.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.27" steps="455"/></proof>
   </goal>
-  <goal name="VC iaddrf.2" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.05" steps="164"/></proof>
+  <goal name="VC iaddrf.2" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.05" steps="164"/></proof>
   </goal>
-  <goal name="VC iaddrf.3" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.06" steps="164"/></proof>
+  <goal name="VC iaddrf.3" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.06" steps="164"/></proof>
   </goal>
-  <goal name="VC iaddrf.4" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.10" steps="392"/></proof>
+  <goal name="VC iaddrf.4" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.10" steps="392"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC iaddurf" expl="VC for iaddurf">
- <transf name="split_vc" >
-  <goal name="VC iaddurf.0" expl="precondition">
-  <proof prover="4" memlimit="1000" obsolete="true"><result status="valid" time="0.65"/></proof>
+ <goal name="VC iaddurf" expl="VC for iaddurf" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC iaddurf.0" expl="precondition" proved="true">
+  <proof prover="4" memlimit="1000"><result status="valid" time="0.65"/></proof>
   </goal>
-  <goal name="VC iaddurf.1" expl="precondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.26" steps="455"/></proof>
+  <goal name="VC iaddurf.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.26" steps="455"/></proof>
   </goal>
-  <goal name="VC iaddurf.2" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.05" steps="164"/></proof>
+  <goal name="VC iaddurf.2" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.05" steps="164"/></proof>
   </goal>
-  <goal name="VC iaddurf.3" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.06" steps="164"/></proof>
+  <goal name="VC iaddurf.3" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.06" steps="164"/></proof>
   </goal>
-  <goal name="VC iaddurf.4" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.10" steps="392"/></proof>
+  <goal name="VC iaddurf.4" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.10" steps="392"/></proof>
   </goal>
  </transf>
  </goal>
@@ -207,149 +207,149 @@
    </goal>
   </transf>
   </goal>
-  <goal name="VC isubrf.1" expl="precondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.22" steps="455"/></proof>
+  <goal name="VC isubrf.1" expl="precondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.22" steps="455"/></proof>
   </goal>
-  <goal name="VC isubrf.2" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.11" steps="164"/></proof>
+  <goal name="VC isubrf.2" expl="postcondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.11" steps="164"/></proof>
   </goal>
-  <goal name="VC isubrf.3" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.09" steps="164"/></proof>
+  <goal name="VC isubrf.3" expl="postcondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.09" steps="164"/></proof>
   </goal>
-  <goal name="VC isubrf.4" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.23" steps="392"/></proof>
+  <goal name="VC isubrf.4" expl="postcondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.23" steps="392"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC isuburf" expl="VC for isuburf">
  </goal>
- <goal name="VC ibeqrf" expl="VC for ibeqrf">
- <transf name="split_goal_right" >
-  <goal name="VC ibeqrf.0" expl="precondition">
-  <proof prover="4" obsolete="true"><result status="valid" time="0.47"/></proof>
+ <goal name="VC ibeqrf" expl="VC for ibeqrf" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC ibeqrf.0" expl="precondition" proved="true">
+  <proof prover="4"><result status="valid" time="0.47"/></proof>
   </goal>
-  <goal name="VC ibeqrf.1" expl="precondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.25" steps="477"/></proof>
+  <goal name="VC ibeqrf.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.25" steps="477"/></proof>
   </goal>
-  <goal name="VC ibeqrf.2" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.05" steps="164"/></proof>
+  <goal name="VC ibeqrf.2" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.05" steps="164"/></proof>
   </goal>
-  <goal name="VC ibeqrf.3" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.06" steps="164"/></proof>
+  <goal name="VC ibeqrf.3" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.06" steps="164"/></proof>
   </goal>
-  <goal name="VC ibeqrf.4" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.24" steps="392"/></proof>
-  </goal>
- </transf>
- </goal>
- <goal name="VC ibnerf" expl="VC for ibnerf">
- <transf name="split_goal_right" >
-  <goal name="VC ibnerf.0" expl="precondition">
-  <proof prover="4" memlimit="1000" obsolete="true"><result status="valid" time="0.36"/></proof>
-  </goal>
-  <goal name="VC ibnerf.1" expl="precondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.29" steps="479"/></proof>
-  </goal>
-  <goal name="VC ibnerf.2" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.05" steps="164"/></proof>
-  </goal>
-  <goal name="VC ibnerf.3" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.04" steps="164"/></proof>
-  </goal>
-  <goal name="VC ibnerf.4" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.24" steps="392"/></proof>
+  <goal name="VC ibeqrf.4" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.24" steps="392"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC iblerf" expl="VC for iblerf">
- <transf name="split_goal_right" >
-  <goal name="VC iblerf.0" expl="precondition">
-  <proof prover="4" memlimit="1000" obsolete="true"><result status="valid" time="0.46"/></proof>
+ <goal name="VC ibnerf" expl="VC for ibnerf" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC ibnerf.0" expl="precondition" proved="true">
+  <proof prover="4" memlimit="1000"><result status="valid" time="0.36"/></proof>
   </goal>
-  <goal name="VC iblerf.1" expl="precondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.25" steps="478"/></proof>
+  <goal name="VC ibnerf.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.29" steps="479"/></proof>
   </goal>
-  <goal name="VC iblerf.2" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.05" steps="164"/></proof>
+  <goal name="VC ibnerf.2" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.05" steps="164"/></proof>
   </goal>
-  <goal name="VC iblerf.3" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.06" steps="164"/></proof>
+  <goal name="VC ibnerf.3" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.04" steps="164"/></proof>
   </goal>
-  <goal name="VC iblerf.4" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.11" steps="392"/></proof>
-  </goal>
- </transf>
- </goal>
- <goal name="VC ibgtrf" expl="VC for ibgtrf">
- <transf name="split_goal_right" >
-  <goal name="VC ibgtrf.0" expl="precondition">
-  <proof prover="4" memlimit="1000" obsolete="true"><result status="valid" time="0.48"/></proof>
-  </goal>
-  <goal name="VC ibgtrf.1" expl="precondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.25" steps="480"/></proof>
-  </goal>
-  <goal name="VC ibgtrf.2" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.05" steps="164"/></proof>
-  </goal>
-  <goal name="VC ibgtrf.3" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.07" steps="164"/></proof>
-  </goal>
-  <goal name="VC ibgtrf.4" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.24" steps="392"/></proof>
+  <goal name="VC ibnerf.4" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.24" steps="392"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC iconstf" expl="VC for iconstf">
- <transf name="split_goal_right" >
-  <goal name="VC iconstf.0" expl="precondition">
-  <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.04"/></proof>
+ <goal name="VC iblerf" expl="VC for iblerf" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC iblerf.0" expl="precondition" proved="true">
+  <proof prover="4" memlimit="1000"><result status="valid" time="0.46"/></proof>
   </goal>
-  <goal name="VC iconstf.1" expl="precondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.19" steps="451"/></proof>
+  <goal name="VC iblerf.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.25" steps="478"/></proof>
   </goal>
-  <goal name="VC iconstf.2" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.14" steps="164"/></proof>
+  <goal name="VC iblerf.2" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.05" steps="164"/></proof>
   </goal>
-  <goal name="VC iconstf.3" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="164"/></proof>
+  <goal name="VC iblerf.3" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.06" steps="164"/></proof>
   </goal>
-  <goal name="VC iconstf.4" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.26" steps="392"/></proof>
-  </goal>
- </transf>
- </goal>
- <goal name="VC ivarf" expl="VC for ivarf">
- <transf name="split_goal_right" >
-  <goal name="VC ivarf.0" expl="precondition">
-  <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.02"/></proof>
-  </goal>
-  <goal name="VC ivarf.1" expl="precondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.28" steps="451"/></proof>
-  </goal>
-  <goal name="VC ivarf.2" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.14" steps="164"/></proof>
-  </goal>
-  <goal name="VC ivarf.3" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.14" steps="164"/></proof>
-  </goal>
-  <goal name="VC ivarf.4" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.17" steps="392"/></proof>
+  <goal name="VC iblerf.4" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.27" steps="392"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC create_binop" expl="VC for create_binop">
- <transf name="split_goal_right" >
-  <goal name="VC create_binop.0" expl="precondition">
-  <proof prover="4" obsolete="true"><result status="valid" time="0.78"/></proof>
+ <goal name="VC ibgtrf" expl="VC for ibgtrf" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC ibgtrf.0" expl="precondition" proved="true">
+  <proof prover="4" memlimit="1000"><result status="valid" time="0.48"/></proof>
   </goal>
-  <goal name="VC create_binop.1" expl="precondition">
-  <transf name="compute_specified" >
-   <goal name="VC create_binop.1.0" expl="precondition">
-   <transf name="introduce_premises" >
-    <goal name="VC create_binop.1.0.0" expl="precondition">
-    <transf name="compute_specified" >
-     <goal name="VC create_binop.1.0.0.0" expl="precondition">
-     <proof prover="4" memlimit="1000" obsolete="true"><result status="valid" time="0.51"/></proof>
+  <goal name="VC ibgtrf.1" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.25" steps="480"/></proof>
+  </goal>
+  <goal name="VC ibgtrf.2" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.05" steps="164"/></proof>
+  </goal>
+  <goal name="VC ibgtrf.3" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.07" steps="164"/></proof>
+  </goal>
+  <goal name="VC ibgtrf.4" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.24" steps="392"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC iconstf" expl="VC for iconstf" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC iconstf.0" expl="precondition" proved="true">
+  <proof prover="2" memlimit="2000"><result status="valid" time="0.04"/></proof>
+  </goal>
+  <goal name="VC iconstf.1" expl="precondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.19" steps="451"/></proof>
+  </goal>
+  <goal name="VC iconstf.2" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.14" steps="164"/></proof>
+  </goal>
+  <goal name="VC iconstf.3" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.13" steps="164"/></proof>
+  </goal>
+  <goal name="VC iconstf.4" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.26" steps="392"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC ivarf" expl="VC for ivarf" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC ivarf.0" expl="precondition" proved="true">
+  <proof prover="2" memlimit="2000"><result status="valid" time="0.02"/></proof>
+  </goal>
+  <goal name="VC ivarf.1" expl="precondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.28" steps="451"/></proof>
+  </goal>
+  <goal name="VC ivarf.2" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.14" steps="164"/></proof>
+  </goal>
+  <goal name="VC ivarf.3" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.14" steps="164"/></proof>
+  </goal>
+  <goal name="VC ivarf.4" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.17" steps="392"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC create_binop" expl="VC for create_binop" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC create_binop.0" expl="precondition" proved="true">
+  <proof prover="4"><result status="valid" time="0.78"/></proof>
+  </goal>
+  <goal name="VC create_binop.1" expl="precondition" proved="true">
+  <transf name="compute_specified" proved="true" >
+   <goal name="VC create_binop.1.0" expl="precondition" proved="true">
+   <transf name="introduce_premises" proved="true" >
+    <goal name="VC create_binop.1.0.0" expl="precondition" proved="true">
+    <transf name="compute_specified" proved="true" >
+     <goal name="VC create_binop.1.0.0.0" expl="precondition" proved="true">
+     <proof prover="4" memlimit="1000"><result status="valid" time="0.51"/></proof>
      </goal>
     </transf>
     </goal>
@@ -357,150 +357,463 @@
    </goal>
   </transf>
   </goal>
-  <goal name="VC create_binop.2" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="164"/></proof>
+  <goal name="VC create_binop.2" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.13" steps="164"/></proof>
   </goal>
-  <goal name="VC create_binop.3" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.14" steps="164"/></proof>
+  <goal name="VC create_binop.3" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.14" steps="164"/></proof>
   </goal>
-  <goal name="VC create_binop.4" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="164"/></proof>
+  <goal name="VC create_binop.4" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.13" steps="164"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC iaddf" expl="VC for iaddf">
- <transf name="split_goal_right" >
-  <goal name="VC iaddf.0" expl="precondition">
-  <transf name="compute_specified" >
-   <goal name="VC iaddf.0.0" expl="precondition">
-   <transf name="introduce_premises" >
-    <goal name="VC iaddf.0.0.0" expl="precondition">
-    <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.05"/></proof>
+ <goal name="VC iaddf" expl="VC for iaddf" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC iaddf.0" expl="precondition" proved="true">
+  <transf name="compute_specified" proved="true" >
+   <goal name="VC iaddf.0.0" expl="precondition" proved="true">
+   <transf name="introduce_premises" proved="true" >
+    <goal name="VC iaddf.0.0.0" expl="precondition" proved="true">
+    <proof prover="2" memlimit="2000"><result status="valid" time="0.05"/></proof>
     </goal>
    </transf>
    </goal>
   </transf>
   </goal>
-  <goal name="VC iaddf.1" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.06" steps="154"/></proof>
+  <goal name="VC iaddf.1" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.06" steps="154"/></proof>
   </goal>
-  <goal name="VC iaddf.2" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.06" steps="154"/></proof>
+  <goal name="VC iaddf.2" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.06" steps="154"/></proof>
   </goal>
-  <goal name="VC iaddf.3" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.16" steps="156"/></proof>
-  </goal>
- </transf>
- </goal>
- <goal name="VC iadduf" expl="VC for iadduf">
- <transf name="split_goal_right" >
-  <goal name="VC iadduf.0" expl="precondition">
-  <proof prover="2" timelimit="10" obsolete="true"><result status="valid" time="0.03"/></proof>
-  </goal>
-  <goal name="VC iadduf.1" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.05" steps="154"/></proof>
-  </goal>
-  <goal name="VC iadduf.2" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.05" steps="154"/></proof>
-  </goal>
-  <goal name="VC iadduf.3" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.18" steps="156"/></proof>
+  <goal name="VC iaddf.3" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.16" steps="156"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC isubf" expl="VC for isubf">
- <transf name="split_goal_right" >
-  <goal name="VC isubf.0" expl="precondition">
-  <transf name="compute_specified" >
-   <goal name="VC isubf.0.0" expl="precondition">
-   <transf name="introduce_premises" >
-    <goal name="VC isubf.0.0.0" expl="precondition">
-    <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.05"/></proof>
+ <goal name="VC iadduf" expl="VC for iadduf" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC iadduf.0" expl="precondition" proved="true">
+  <proof prover="2" timelimit="10"><result status="valid" time="0.03"/></proof>
+  </goal>
+  <goal name="VC iadduf.1" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.05" steps="154"/></proof>
+  </goal>
+  <goal name="VC iadduf.2" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.05" steps="154"/></proof>
+  </goal>
+  <goal name="VC iadduf.3" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.18" steps="156"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC isubf" expl="VC for isubf" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC isubf.0" expl="precondition" proved="true">
+  <transf name="compute_specified" proved="true" >
+   <goal name="VC isubf.0.0" expl="precondition" proved="true">
+   <transf name="introduce_premises" proved="true" >
+    <goal name="VC isubf.0.0.0" expl="precondition" proved="true">
+    <proof prover="2" memlimit="2000"><result status="valid" time="0.05"/></proof>
     </goal>
    </transf>
    </goal>
   </transf>
   </goal>
-  <goal name="VC isubf.1" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.06" steps="154"/></proof>
+  <goal name="VC isubf.1" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.06" steps="154"/></proof>
   </goal>
-  <goal name="VC isubf.2" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.06" steps="154"/></proof>
+  <goal name="VC isubf.2" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.06" steps="154"/></proof>
   </goal>
-  <goal name="VC isubf.3" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.21" steps="156"/></proof>
+  <goal name="VC isubf.3" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.21" steps="156"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC isubuf" expl="VC for isubuf">
- <proof prover="0" timelimit="5" obsolete="true"><result status="valid" time="0.19" steps="516"/></proof>
+ <goal name="VC isubuf" expl="VC for isubuf" proved="true">
+ <proof prover="0" timelimit="5"><result status="valid" time="0.32" steps="516"/></proof>
  </goal>
  <goal name="VC inil" expl="VC for inil">
  <transf name="split_goal_right" >
   <goal name="VC inil.0" expl="precondition">
   <proof prover="2" obsolete="true"><result status="timeout" time="5.00"/></proof>
   </goal>
-  <goal name="VC inil.1" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.15" steps="154"/></proof>
+  <goal name="VC inil.1" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.15" steps="154"/></proof>
   </goal>
-  <goal name="VC inil.2" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.14" steps="154"/></proof>
+  <goal name="VC inil.2" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.14" steps="154"/></proof>
   </goal>
-  <goal name="VC inil.3" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="156"/></proof>
-  </goal>
- </transf>
- </goal>
- <goal name="VC ibranchf" expl="VC for ibranchf">
- <transf name="split_vc" >
-  <goal name="VC ibranchf.0" expl="precondition">
-  <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.05"/></proof>
-  </goal>
-  <goal name="VC ibranchf.1" expl="precondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.28" steps="455"/></proof>
-  </goal>
-  <goal name="VC ibranchf.2" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.08" steps="164"/></proof>
-  </goal>
-  <goal name="VC ibranchf.3" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.06" steps="164"/></proof>
-  </goal>
-  <goal name="VC ibranchf.4" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.20" steps="392"/></proof>
+  <goal name="VC inil.3" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.13" steps="156"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC create_cjump" expl="VC for create_cjump">
- <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.70" steps="1092"/></proof>
- </goal>
- <goal name="VC ibeqf" expl="VC for ibeqf">
- <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.07"/></proof>
- </goal>
- <goal name="VC ibnef" expl="VC for ibnef">
- <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.07"/></proof>
- </goal>
- <goal name="VC iblef" expl="VC for iblef">
- <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.06"/></proof>
- </goal>
- <goal name="VC ibgtf" expl="VC for ibgtf">
- <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.06"/></proof>
- </goal>
- <goal name="VC isetvarf" expl="VC for isetvarf">
- <transf name="split_vc" >
-  <goal name="VC isetvarf.0" expl="precondition">
-  <proof prover="4" obsolete="true"><result status="valid" time="0.51"/></proof>
+ <goal name="VC ibranchf" expl="VC for ibranchf" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC ibranchf.0" expl="precondition" proved="true">
+  <proof prover="2" memlimit="2000"><result status="valid" time="0.05"/></proof>
   </goal>
-  <goal name="VC isetvarf.1" expl="precondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.29" steps="554"/></proof>
+  <goal name="VC ibranchf.1" expl="precondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.28" steps="455"/></proof>
   </goal>
-  <goal name="VC isetvarf.2" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.14" steps="164"/></proof>
+  <goal name="VC ibranchf.2" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.08" steps="164"/></proof>
   </goal>
-  <goal name="VC isetvarf.3" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="164"/></proof>
+  <goal name="VC ibranchf.3" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.06" steps="164"/></proof>
   </goal>
-  <goal name="VC isetvarf.4" expl="postcondition">
-  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.16" steps="392"/></proof>
+  <goal name="VC ibranchf.4" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.20" steps="392"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="VC create_cjump" expl="VC for create_cjump" proved="true">
+ <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.53" steps="1092"/></proof>
+ </goal>
+ <goal name="VC ibeqf" expl="VC for ibeqf" proved="true">
+ <proof prover="2" memlimit="2000"><result status="valid" time="0.07"/></proof>
+ </goal>
+ <goal name="VC ibnef" expl="VC for ibnef" proved="true">
+ <proof prover="2" memlimit="2000"><result status="valid" time="0.07"/></proof>
+ </goal>
+ <goal name="VC iblef" expl="VC for iblef" proved="true">
+ <proof prover="2" memlimit="2000"><result status="valid" time="0.06"/></proof>
+ </goal>
+ <goal name="VC ibgtf" expl="VC for ibgtf" proved="true">
+ <proof prover="2" memlimit="2000"><result status="valid" time="0.06"/></proof>
+ </goal>
+ <goal name="VC isetvarf" expl="VC for isetvarf" proved="true">
+ <transf name="split_vc" proved="true" >
+  <goal name="VC isetvarf.0" expl="precondition" proved="true">
+  <proof prover="4"><result status="valid" time="0.51"/></proof>
+  </goal>
+  <goal name="VC isetvarf.1" expl="precondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.29" steps="554"/></proof>
+  </goal>
+  <goal name="VC isetvarf.2" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.14" steps="164"/></proof>
+  </goal>
+  <goal name="VC isetvarf.3" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.13" steps="164"/></proof>
+  </goal>
+  <goal name="VC isetvarf.4" expl="postcondition" proved="true">
+  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.16" steps="392"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+<file name="../vm.mlw">
+<theory name="ReflTransClosure">
+ <goal name="transition_star_one">
+ <proof prover="2" obsolete="true"><result status="valid" time="0.01"/></proof>
+ </goal>
+ <goal name="transition_star_transitive">
+ <transf name="induction_pr" >
+  <goal name="transition_star_transitive.0">
+  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="8"/></proof>
+  </goal>
+  <goal name="transition_star_transitive.1">
+  <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="16"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Vm">
+ <goal name="codeseq_at_app_right">
+ <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="407"/></proof>
+ </goal>
+ <goal name="codeseq_at_app_left">
+ <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="460"/></proof>
+ </goal>
+ <goal name="list_app_eq_nil">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.05" steps="403"/></proof>
+ </goal>
+ <goal name="list_app_eq_left_cons">
+ <transf name="induction_ty_lex" >
+  <goal name="list_app_eq_left_cons.0">
+  <transf name="split_goal_right" >
+   <goal name="list_app_eq_left_cons.0.0">
+   <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.17" steps="392"/></proof>
+   </goal>
+   <goal name="list_app_eq_left_cons.0.1">
+   <transf name="introduce_premises" >
+    <goal name="list_app_eq_left_cons.0.1.0">
+    <transf name="subst_all" >
+     <goal name="list_app_eq_left_cons.0.1.0.0">
+     <proof prover="4" obsolete="true"><result status="valid" time="0.13"/></proof>
+     </goal>
+    </transf>
+    </goal>
+   </transf>
+   </goal>
+  </transf>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="list_app_eq_last">
+ <transf name="induction_ty_lex" >
+  <goal name="list_app_eq_last.0">
+  <transf name="split_goal_right" >
+   <goal name="list_app_eq_last.0.0">
+   <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.16" steps="405"/></proof>
+   </goal>
+   <goal name="list_app_eq_last.0.1">
+   <transf name="introduce_premises" >
+    <goal name="list_app_eq_last.0.1.0">
+    <transf name="subst_all" >
+     <goal name="list_app_eq_last.0.1.0.0">
+     <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.05" steps="451"/></proof>
+     </goal>
+    </transf>
+    </goal>
+   </transf>
+   </goal>
+  </transf>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="list_app_eq_left">
+ <transf name="induction_ty_lex" >
+  <goal name="list_app_eq_left.0">
+  <transf name="split_goal_right" >
+   <goal name="list_app_eq_left.0.0">
+   <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.04" steps="154"/></proof>
+   </goal>
+   <goal name="list_app_eq_left.0.1">
+   <transf name="introduce_premises" >
+    <goal name="list_app_eq_left.0.1.0">
+    <transf name="subst_all" >
+     <goal name="list_app_eq_left.0.1.0.0">
+     <proof prover="4" obsolete="true"><result status="valid" time="0.46"/></proof>
+     </goal>
+    </transf>
+    </goal>
+   </transf>
+   </goal>
+  </transf>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="codeseq_at_right">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.06" steps="432"/></proof>
+ </goal>
+ <goal name="trans_deterministic_aux">
+ <transf name="inversion_pr" >
+  <goal name="trans_deterministic_aux.0">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.23" steps="3225"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.1">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.25" steps="3225"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.2">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.23" steps="3227"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.3">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.35" steps="3495"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.4">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.25" steps="3240"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.5">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.25" steps="3249"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.6">
+  <proof prover="0" obsolete="true"><result status="valid" time="1.47" steps="4083"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.7">
+  </goal>
+  <goal name="trans_deterministic_aux.8">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.27" steps="3241"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.9">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="2.30" steps="3630"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.10">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.77" steps="3633"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.11">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="2.63" steps="3881"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.12">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.92" steps="3855"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.13">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.30" steps="3247"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.14">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.26" steps="3247"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.15">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.25" steps="3239"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.16">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.84" steps="3305"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.17">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.40" steps="3934"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.18">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.32" steps="3084"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.19">
+  </goal>
+  <goal name="trans_deterministic_aux.20">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="2.00" steps="3751"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.21">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.57" steps="3614"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.22">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.69" steps="3738"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.23">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.94" steps="3800"/></proof>
+  </goal>
+  <goal name="trans_deterministic_aux.24">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="2.09" steps="3668"/></proof>
+  </goal>
+ </transf>
+ </goal>
+ <goal name="trans_deterministic">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.10" steps="376"/></proof>
+ </goal>
+ <goal name="trans_deterministic_star">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.10" steps="152"/></proof>
+ </goal>
+ <goal name="VC ibranch">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.01" steps="146"/></proof>
+ </goal>
+ <goal name="VC iaddur">
+ <proof prover="0" obsolete="true"><result status="valid" time="0.03" steps="146"/></proof>
+ </goal>
+ <goal name="VC ibgt">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
+ </goal>
+ <goal name="VC push">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
+ </goal>
+ <goal name="VC ipopr">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.03" steps="146"/></proof>
+ </goal>
+ <goal name="VC iimm">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
+ </goal>
+ <goal name="VC ibgtr">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
+ </goal>
+ <goal name="VC ihalt">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
+ </goal>
+ <goal name="VC isubr">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
+ </goal>
+ <goal name="VC isub">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
+ </goal>
+ <goal name="VC ibler">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
+ </goal>
+ <goal name="VC ipushr">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.03" steps="146"/></proof>
+ </goal>
+ <goal name="VC ivar">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
+ </goal>
+ <goal name="VC iload">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
+ </goal>
+ <goal name="VC iaddu">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.01" steps="146"/></proof>
+ </goal>
+ <goal name="VC ibeqr">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
+ </goal>
+ <goal name="VC ibeq">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
+ </goal>
+ <goal name="VC iadd">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
+ </goal>
+ <goal name="VC ibner">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
+ </goal>
+ <goal name="VC ibne">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
+ </goal>
+ <goal name="VC iconst">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
+ </goal>
+ <goal name="VC istore">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
+ </goal>
+ <goal name="VC iaddr">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
+ </goal>
+ <goal name="VC ible">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.01" steps="146"/></proof>
+ </goal>
+ <goal name="VC isetvar">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
+ </goal>
+</theory>
+</file>
+<file name="../logic.mlw">
+<theory name="Compiler_logic">
+ <goal name="VC hl" expl="VC for hl">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.12" steps="148"/></proof>
+ </goal>
+ <goal name="VC wp" expl="VC for wp">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.12" steps="148"/></proof>
+ </goal>
+ <goal name="seq_wp_lemma">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="148"/></proof>
+ </goal>
+ <goal name="VC infix --" expl="VC for infix --">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.37" steps="606"/></proof>
+ </goal>
+ <goal name="fork_wp_lemma">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.12" steps="365"/></proof>
+ </goal>
+ <goal name="VC infix %" expl="VC for infix %">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.15" steps="423"/></proof>
+ </goal>
+ <goal name="towp_wp_lemma">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.14" steps="385"/></proof>
+ </goal>
+ <goal name="VC prefix $" expl="VC for prefix $">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="398"/></proof>
+ </goal>
+ <goal name="VC hoare" expl="VC for hoare">
+ <proof prover="2" obsolete="true"><result status="valid" time="0.03"/></proof>
+ </goal>
+ <goal name="pconj_lemma">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.01" steps="149"/></proof>
+ </goal>
+ <goal name="loop_wp_lemma">
+ <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.36" steps="2024"/></proof>
+ <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.04"/></proof>
+ </goal>
+ <goal name="VC make_loop" expl="VC for make_loop">
+ <transf name="split_goal_right" >
+  <goal name="VC make_loop.0" expl="assertion">
+  <transf name="induction_pr" >
+   <goal name="VC make_loop.0.0" expl="assertion">
+   <proof prover="2" obsolete="true"><result status="valid" time="0.04"/></proof>
+   </goal>
+  </transf>
+  </goal>
+  <goal name="VC make_loop.1" expl="precondition">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.12" steps="390"/></proof>
+  </goal>
+  <goal name="VC make_loop.2" expl="postcondition">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="150"/></proof>
+  </goal>
+  <goal name="VC make_loop.3" expl="postcondition">
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="150"/></proof>
   </goal>
  </transf>
  </goal>
@@ -712,7 +1025,7 @@
       <goal name="VC compile_bexpr.3.1.1.0.0" expl="precondition" proved="true">
       <transf name="compute_specified" proved="true" >
        <goal name="VC compile_bexpr.3.1.1.0.0.0" expl="precondition" proved="true">
-       <proof prover="0"><result status="valid" time="0.20" steps="464"/></proof>
+       <proof prover="0"><result status="valid" time="0.32" steps="464"/></proof>
        </goal>
       </transf>
       </goal>
@@ -829,7 +1142,7 @@
   <proof prover="0"><result status="valid" time="0.32" steps="560"/></proof>
   </goal>
   <goal name="VC compile_aexpr.6" expl="variant decrease" proved="true">
-  <proof prover="0" timelimit="5"><result status="valid" time="0.20" steps="516"/></proof>
+  <proof prover="0" timelimit="5"><result status="valid" time="0.34" steps="516"/></proof>
   </goal>
   <goal name="VC compile_aexpr.7" expl="variant decrease" proved="true">
   <proof prover="0" timelimit="5"><result status="valid" time="0.20" steps="561"/></proof>
@@ -1127,33 +1440,33 @@
  </goal>
 </theory>
 <theory name="Compile_com">
- <goal name="loop_variant_lemma">
- <proof prover="0" obsolete="true"><result status="valid" time="0.29" steps="434"/></proof>
+ <goal name="loop_variant_lemma" proved="true">
+ <proof prover="0"><result status="valid" time="0.29" steps="434"/></proof>
  </goal>
  <goal name="loop_variant_acc">
  <transf name="split_goal_right" >
-  <goal name="loop_variant_acc.0">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.25" steps="494"/></proof>
+  <goal name="loop_variant_acc.0" proved="true">
+  <proof prover="0"><result status="valid" time="0.25" steps="494"/></proof>
   </goal>
   <goal name="loop_variant_acc.1">
   <proof prover="2" timelimit="10" obsolete="true"><result status="timeout" time="16.00"/></proof>
   </goal>
   <goal name="loop_variant_acc.2">
   <transf name="induction_pr" >
-   <goal name="loop_variant_acc.2.0">
-   <proof prover="0" obsolete="true"><result status="valid" time="0.08" steps="164"/></proof>
+   <goal name="loop_variant_acc.2.0" proved="true">
+   <proof prover="0"><result status="valid" time="0.08" steps="164"/></proof>
    </goal>
-   <goal name="loop_variant_acc.2.1">
-   <proof prover="0" obsolete="true"><result status="valid" time="0.22" steps="164"/></proof>
+   <goal name="loop_variant_acc.2.1" proved="true">
+   <proof prover="0"><result status="valid" time="0.22" steps="164"/></proof>
    </goal>
-   <goal name="loop_variant_acc.2.2">
-   <proof prover="0" obsolete="true"><result status="valid" time="0.24" steps="170"/></proof>
+   <goal name="loop_variant_acc.2.2" proved="true">
+   <proof prover="0"><result status="valid" time="0.24" steps="170"/></proof>
    </goal>
-   <goal name="loop_variant_acc.2.3">
-   <proof prover="0" obsolete="true"><result status="valid" time="0.24" steps="169"/></proof>
+   <goal name="loop_variant_acc.2.3" proved="true">
+   <proof prover="0"><result status="valid" time="0.24" steps="169"/></proof>
    </goal>
-   <goal name="loop_variant_acc.2.4">
-   <proof prover="0" obsolete="true"><result status="valid" time="0.23" steps="169"/></proof>
+   <goal name="loop_variant_acc.2.4" proved="true">
+   <proof prover="0"><result status="valid" time="0.23" steps="169"/></proof>
    </goal>
    <goal name="loop_variant_acc.2.5">
    <transf name="simplify_trivial_quantification_in_goal" >
@@ -1182,10 +1495,10 @@
     </goal>
    </transf>
    </goal>
-   <goal name="loop_variant_acc.2.6">
-   <transf name="simplify_trivial_quantification_in_goal" >
-    <goal name="loop_variant_acc.2.6.0">
-    <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.17" steps="554"/></proof>
+   <goal name="loop_variant_acc.2.6" proved="true">
+   <transf name="simplify_trivial_quantification_in_goal" proved="true" >
+    <goal name="loop_variant_acc.2.6.0" proved="true">
+    <proof prover="0" memlimit="2000"><result status="valid" time="0.17" steps="554"/></proof>
     </goal>
    </transf>
    </goal>
@@ -1193,33 +1506,33 @@
   </goal>
  </transf>
  </goal>
- <goal name="VC compile_com" expl="VC for compile_com">
- <transf name="split_goal_right" >
-  <goal name="VC compile_com.0" expl="variant decrease">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.26" steps="440"/></proof>
+ <goal name="VC compile_com" expl="VC for compile_com" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC compile_com.0" expl="variant decrease" proved="true">
+  <proof prover="0"><result status="valid" time="0.26" steps="440"/></proof>
   </goal>
-  <goal name="VC compile_com.1" expl="variant decrease">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.17" steps="481"/></proof>
+  <goal name="VC compile_com.1" expl="variant decrease" proved="true">
+  <proof prover="0"><result status="valid" time="0.29" steps="481"/></proof>
   </goal>
-  <goal name="VC compile_com.2" expl="variant decrease">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.24" steps="446"/></proof>
+  <goal name="VC compile_com.2" expl="variant decrease" proved="true">
+  <proof prover="0"><result status="valid" time="0.24" steps="446"/></proof>
   </goal>
-  <goal name="VC compile_com.3" expl="variant decrease">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.17" steps="495"/></proof>
+  <goal name="VC compile_com.3" expl="variant decrease" proved="true">
+  <proof prover="0"><result status="valid" time="0.31" steps="495"/></proof>
   </goal>
-  <goal name="VC compile_com.4" expl="variant decrease">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.32" steps="441"/></proof>
+  <goal name="VC compile_com.4" expl="variant decrease" proved="true">
+  <proof prover="0"><result status="valid" time="0.32" steps="441"/></proof>
   </goal>
-  <goal name="VC compile_com.5" expl="precondition">
-  <transf name="split_goal_right" >
-   <goal name="VC compile_com.5.0" expl="precondition">
-   <transf name="compute_specified" >
-    <goal name="VC compile_com.5.0.0" expl="precondition">
-    <transf name="introduce_premises" >
-     <goal name="VC compile_com.5.0.0.0" expl="precondition">
-     <transf name="compute_specified" >
-      <goal name="VC compile_com.5.0.0.0.0" expl="precondition">
-      <proof prover="0" obsolete="true"><result status="valid" time="0.26" steps="412"/></proof>
+  <goal name="VC compile_com.5" expl="precondition" proved="true">
+  <transf name="split_goal_right" proved="true" >
+   <goal name="VC compile_com.5.0" expl="precondition" proved="true">
+   <transf name="compute_specified" proved="true" >
+    <goal name="VC compile_com.5.0.0" expl="precondition" proved="true">
+    <transf name="introduce_premises" proved="true" >
+     <goal name="VC compile_com.5.0.0.0" expl="precondition" proved="true">
+     <transf name="compute_specified" proved="true" >
+      <goal name="VC compile_com.5.0.0.0.0" expl="precondition" proved="true">
+      <proof prover="0"><result status="valid" time="0.26" steps="412"/></proof>
       </goal>
      </transf>
      </goal>
@@ -1227,14 +1540,14 @@
     </goal>
    </transf>
    </goal>
-   <goal name="VC compile_com.5.1" expl="precondition">
-   <transf name="compute_specified" >
-    <goal name="VC compile_com.5.1.0" expl="precondition">
-    <transf name="introduce_premises" >
-     <goal name="VC compile_com.5.1.0.0" expl="precondition">
-     <transf name="compute_specified" >
-      <goal name="VC compile_com.5.1.0.0.0" expl="precondition">
-      <proof prover="0" obsolete="true"><result status="valid" time="0.39" steps="584"/></proof>
+   <goal name="VC compile_com.5.1" expl="precondition" proved="true">
+   <transf name="compute_specified" proved="true" >
+    <goal name="VC compile_com.5.1.0" expl="precondition" proved="true">
+    <transf name="introduce_premises" proved="true" >
+     <goal name="VC compile_com.5.1.0.0" expl="precondition" proved="true">
+     <transf name="compute_specified" proved="true" >
+      <goal name="VC compile_com.5.1.0.0.0" expl="precondition" proved="true">
+      <proof prover="0"><result status="valid" time="0.39" steps="584"/></proof>
       </goal>
      </transf>
      </goal>
@@ -1242,14 +1555,14 @@
     </goal>
    </transf>
    </goal>
-   <goal name="VC compile_com.5.2" expl="precondition">
-   <transf name="compute_specified" >
-    <goal name="VC compile_com.5.2.0" expl="precondition">
-    <transf name="introduce_premises" >
-     <goal name="VC compile_com.5.2.0.0" expl="precondition">
-     <transf name="compute_specified" >
-      <goal name="VC compile_com.5.2.0.0.0" expl="precondition">
-      <proof prover="0" obsolete="true"><result status="valid" time="0.89" steps="1931"/></proof>
+   <goal name="VC compile_com.5.2" expl="precondition" proved="true">
+   <transf name="compute_specified" proved="true" >
+    <goal name="VC compile_com.5.2.0" expl="precondition" proved="true">
+    <transf name="introduce_premises" proved="true" >
+     <goal name="VC compile_com.5.2.0.0" expl="precondition" proved="true">
+     <transf name="compute_specified" proved="true" >
+      <goal name="VC compile_com.5.2.0.0.0" expl="precondition" proved="true">
+      <proof prover="0"><result status="valid" time="0.89" steps="1931"/></proof>
       </goal>
      </transf>
      </goal>
@@ -1257,14 +1570,14 @@
     </goal>
    </transf>
    </goal>
-   <goal name="VC compile_com.5.3" expl="precondition">
-   <transf name="compute_specified" >
-    <goal name="VC compile_com.5.3.0" expl="precondition">
-    <transf name="introduce_premises" >
-     <goal name="VC compile_com.5.3.0.0" expl="precondition">
-     <transf name="compute_specified" >
-      <goal name="VC compile_com.5.3.0.0.0" expl="precondition">
-      <proof prover="0" obsolete="true"><result status="valid" time="1.07" steps="1851"/></proof>
+   <goal name="VC compile_com.5.3" expl="precondition" proved="true">
+   <transf name="compute_specified" proved="true" >
+    <goal name="VC compile_com.5.3.0" expl="precondition" proved="true">
+    <transf name="introduce_premises" proved="true" >
+     <goal name="VC compile_com.5.3.0.0" expl="precondition" proved="true">
+     <transf name="compute_specified" proved="true" >
+      <goal name="VC compile_com.5.3.0.0.0" expl="precondition" proved="true">
+      <proof prover="0"><result status="valid" time="1.07" steps="1851"/></proof>
       </goal>
      </transf>
      </goal>
@@ -1272,115 +1585,115 @@
     </goal>
    </transf>
    </goal>
-   <goal name="VC compile_com.5.4" expl="precondition">
-   <transf name="compute_specified" >
-    <goal name="VC compile_com.5.4.0" expl="precondition">
-    <transf name="introduce_premises" >
-     <goal name="VC compile_com.5.4.0.0" expl="precondition">
-     <transf name="compute_specified" >
-      <goal name="VC compile_com.5.4.0.0.0" expl="precondition">
-      <transf name="split_goal_right" >
-       <goal name="VC compile_com.5.4.0.0.0.0" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.22" steps="200"/></proof>
+   <goal name="VC compile_com.5.4" expl="precondition" proved="true">
+   <transf name="compute_specified" proved="true" >
+    <goal name="VC compile_com.5.4.0" expl="precondition" proved="true">
+    <transf name="introduce_premises" proved="true" >
+     <goal name="VC compile_com.5.4.0.0" expl="precondition" proved="true">
+     <transf name="compute_specified" proved="true" >
+      <goal name="VC compile_com.5.4.0.0.0" expl="precondition" proved="true">
+      <transf name="split_goal_right" proved="true" >
+       <goal name="VC compile_com.5.4.0.0.0.0" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.22" steps="200"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.1" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.20" steps="208"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.1" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.20" steps="208"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.2" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.20" steps="208"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.2" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.20" steps="208"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.3" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.19" steps="208"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.3" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.19" steps="208"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.4" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.27" steps="488"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.4" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.27" steps="488"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.5" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.33" steps="523"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.5" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.33" steps="523"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.6" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.14" steps="254"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.6" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.14" steps="254"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.7" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.24" steps="272"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.7" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.24" steps="272"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.8" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.24" steps="272"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.8" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.24" steps="272"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.9" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.23" steps="272"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.9" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.23" steps="272"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.10" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.23" steps="270"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.10" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.23" steps="270"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.11" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.23" steps="292"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.11" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.23" steps="292"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.12" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.23" steps="290"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.12" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.23" steps="290"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.13" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.25" steps="272"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.13" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.25" steps="272"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.14" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.81" steps="1440"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.14" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.81" steps="1440"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.15" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.23" steps="296"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.15" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.23" steps="296"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.16" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.29" steps="309"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.16" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.29" steps="309"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.17" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.33" steps="309"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.17" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.33" steps="309"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.18" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.38" steps="309"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.18" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.38" steps="309"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.19" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="7.77" steps="15715"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.19" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="7.77" steps="15715"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.20" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.38" steps="329"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.20" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.38" steps="329"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.21" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.15" steps="324"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.21" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.15" steps="324"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.22" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.11" steps="252"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.22" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.11" steps="252"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.23" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.11" steps="270"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.23" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.11" steps="270"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.24" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.11" steps="270"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.24" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.22" steps="270"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.25" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="1.33" steps="2895"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.25" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="1.33" steps="2895"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.26" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.23" steps="270"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.26" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.23" steps="270"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.27" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.16" steps="270"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.27" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.16" steps="270"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.28" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.15" steps="268"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.28" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.15" steps="268"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.29" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.13" steps="294"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.29" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.13" steps="294"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.30" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.18" steps="304"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.30" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.18" steps="304"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.31" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.17" steps="304"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.31" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.17" steps="304"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.32" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.27" steps="304"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.32" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.27" steps="304"/></proof>
        </goal>
-       <goal name="VC compile_com.5.4.0.0.0.33" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><result status="valid" time="0.27" steps="304"/></proof>
+       <goal name="VC compile_com.5.4.0.0.0.33" expl="VC for compile_com" proved="true">
+       <proof prover="0"><result status="valid" time="0.27" steps="304"/></proof>
        </goal>
       </transf>
       </goal>
@@ -1392,25 +1705,25 @@
    </goal>
   </transf>
   </goal>
-  <goal name="VC compile_com.6" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.22" steps="160"/></proof>
+  <goal name="VC compile_com.6" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.22" steps="160"/></proof>
   </goal>
-  <goal name="VC compile_com.7" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="valid" time="0.21" steps="160"/></proof>
+  <goal name="VC compile_com.7" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.21" steps="160"/></proof>
   </goal>
  </transf>
  </goal>
- <goal name="VC compile_com_natural" expl="VC for compile_com_natural">
- <transf name="split_goal_right" >
-  <goal name="VC compile_com_natural.0" expl="assertion">
-  <transf name="compute_specified" >
-   <goal name="VC compile_com_natural.0.0" expl="assertion">
-   <transf name="introduce_premises" >
-    <goal name="VC compile_com_natural.0.0.0" expl="assertion">
-    <transf name="compute_specified" >
-     <goal name="VC compile_com_natural.0.0.0.0" expl="assertion">
-     <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.28" steps="420"/></proof>
-     <proof prover="2" timelimit="10" obsolete="true"><result status="valid" time="0.10"/></proof>
+ <goal name="VC compile_com_natural" expl="VC for compile_com_natural" proved="true">
+ <transf name="split_goal_right" proved="true" >
+  <goal name="VC compile_com_natural.0" expl="assertion" proved="true">
+  <transf name="compute_specified" proved="true" >
+   <goal name="VC compile_com_natural.0.0" expl="assertion" proved="true">
+   <transf name="introduce_premises" proved="true" >
+    <goal name="VC compile_com_natural.0.0.0" expl="assertion" proved="true">
+    <transf name="compute_specified" proved="true" >
+     <goal name="VC compile_com_natural.0.0.0.0" expl="assertion" proved="true">
+     <proof prover="0" memlimit="2000"><result status="valid" time="0.28" steps="420"/></proof>
+     <proof prover="2" timelimit="10"><result status="valid" time="0.10"/></proof>
      </goal>
     </transf>
     </goal>
@@ -1418,15 +1731,15 @@
    </goal>
   </transf>
   </goal>
-  <goal name="VC compile_com_natural.1" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.24" steps="503"/></proof>
+  <goal name="VC compile_com_natural.1" expl="postcondition" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.24" steps="503"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC compile_program" expl="VC for compile_program">
  <transf name="split_goal_right" >
-  <goal name="VC compile_program.0" expl="assertion">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="160"/></proof>
+  <goal name="VC compile_program.0" expl="assertion" proved="true">
+  <proof prover="0" memlimit="2000"><result status="valid" time="0.13" steps="160"/></proof>
   </goal>
   <goal name="VC compile_program.1" expl="postcondition">
   <proof prover="2" timelimit="10" memlimit="2000" obsolete="true"><result status="timeout" time="10.00"/></proof>
@@ -1737,7 +2050,7 @@
        <proof prover="0" obsolete="true"><result status="valid" time="0.27" steps="313"/></proof>
        </goal>
        <goal name="VC compile_com.5.4.0.0.0.16" expl="VC for compile_com">
-       <proof prover="0" memlimit="2000" obsolete="true"><undone/></proof>
+       <proof prover="0" memlimit="2000" obsolete="true"><result status="failure" time="0.00"/></proof>
        </goal>
        <goal name="VC compile_com.5.4.0.0.0.17" expl="VC for compile_com">
        <proof prover="0" obsolete="true"><result status="valid" time="0.33" steps="331"/></proof>
@@ -1755,25 +2068,25 @@
        <proof prover="0" obsolete="true"><result status="valid" time="0.15" steps="277"/></proof>
        </goal>
        <goal name="VC compile_com.5.4.0.0.0.22" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><undone/></proof>
+       <proof prover="0" obsolete="true"><result status="failure" time="0.00"/></proof>
        </goal>
        <goal name="VC compile_com.5.4.0.0.0.23" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><undone/></proof>
+       <proof prover="0" obsolete="true"><result status="failure" time="0.00"/></proof>
        </goal>
        <goal name="VC compile_com.5.4.0.0.0.24" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><undone/></proof>
+       <proof prover="0" obsolete="true"><result status="failure" time="0.00"/></proof>
        </goal>
        <goal name="VC compile_com.5.4.0.0.0.25" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><undone/></proof>
+       <proof prover="0" obsolete="true"><result status="failure" time="0.00"/></proof>
        </goal>
        <goal name="VC compile_com.5.4.0.0.0.26" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><undone/></proof>
+       <proof prover="0" obsolete="true"><result status="failure" time="0.00"/></proof>
        </goal>
        <goal name="VC compile_com.5.4.0.0.0.27" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><undone/></proof>
+       <proof prover="0" obsolete="true"><result status="failure" time="0.00"/></proof>
        </goal>
        <goal name="VC compile_com.5.4.0.0.0.28" expl="VC for compile_com">
-       <proof prover="0" obsolete="true"><undone/></proof>
+       <proof prover="0" obsolete="true"><result status="failure" time="0.00"/></proof>
        </goal>
       </transf>
       </goal>
@@ -1786,10 +2099,10 @@
   </transf>
   </goal>
   <goal name="VC compile_com.6" expl="postcondition">
-  <proof prover="0" obsolete="true"><undone/></proof>
+  <proof prover="0" obsolete="true"><result status="failure" time="0.00"/></proof>
   </goal>
   <goal name="VC compile_com.7" expl="postcondition">
-  <proof prover="0" obsolete="true"><undone/></proof>
+  <proof prover="0" obsolete="true"><result status="failure" time="0.00"/></proof>
   </goal>
  </transf>
  </goal>
@@ -1802,7 +2115,7 @@
     <goal name="VC compile_com_natural.0.0.0" expl="assertion">
     <transf name="compute_specified" >
      <goal name="VC compile_com_natural.0.0.0.0" expl="assertion">
-     <proof prover="0" memlimit="2000" obsolete="true"><undone/></proof>
+     <proof prover="0" memlimit="2000" obsolete="true"><result status="failure" time="0.00"/></proof>
      </goal>
     </transf>
     </goal>
@@ -1811,389 +2124,76 @@
   </transf>
   </goal>
   <goal name="VC compile_com_natural.1" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><undone/></proof>
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="failure" time="0.00"/></proof>
   </goal>
  </transf>
  </goal>
  <goal name="VC compile_program" expl="VC for compile_program">
  <transf name="split_goal_right" >
   <goal name="VC compile_program.0" expl="assertion">
-  <proof prover="0" memlimit="2000" obsolete="true"><undone/></proof>
+  <proof prover="0" memlimit="2000" obsolete="true"><result status="failure" time="0.00"/></proof>
   </goal>
   <goal name="VC compile_program.1" expl="postcondition">
-  <proof prover="2" timelimit="10" memlimit="2000" obsolete="true"><undone/></proof>
+  <proof prover="2" timelimit="10" memlimit="2000" obsolete="true"><result status="failure" time="0.00"/></proof>
   </goal>
  </transf>
- </goal>
-</theory>
-</file>
-<file name="../logic.mlw">
-<theory name="Compiler_logic">
- <goal name="VC hl" expl="VC for hl">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.12" steps="148"/></proof>
- </goal>
- <goal name="VC wp" expl="VC for wp">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.12" steps="148"/></proof>
- </goal>
- <goal name="seq_wp_lemma">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="148"/></proof>
- </goal>
- <goal name="VC infix --" expl="VC for infix --">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.37" steps="606"/></proof>
- </goal>
- <goal name="fork_wp_lemma">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.12" steps="365"/></proof>
- </goal>
- <goal name="VC infix %" expl="VC for infix %">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.15" steps="423"/></proof>
- </goal>
- <goal name="towp_wp_lemma">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.14" steps="385"/></proof>
- </goal>
- <goal name="VC prefix $" expl="VC for prefix $">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="398"/></proof>
- </goal>
- <goal name="VC hoare" expl="VC for hoare">
- <proof prover="2" obsolete="true"><result status="valid" time="0.03"/></proof>
- </goal>
- <goal name="pconj_lemma">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.01" steps="149"/></proof>
- </goal>
- <goal name="loop_wp_lemma">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.36" steps="2024"/></proof>
- <proof prover="2" memlimit="2000" obsolete="true"><result status="valid" time="0.04"/></proof>
- </goal>
- <goal name="VC make_loop" expl="VC for make_loop">
- <transf name="split_goal_right" >
-  <goal name="VC make_loop.0" expl="assertion">
-  <transf name="induction_pr" >
-   <goal name="VC make_loop.0.0" expl="assertion">
-   <proof prover="2" obsolete="true"><result status="valid" time="0.04"/></proof>
-   </goal>
-  </transf>
-  </goal>
-  <goal name="VC make_loop.1" expl="precondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.12" steps="390"/></proof>
-  </goal>
-  <goal name="VC make_loop.2" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="150"/></proof>
-  </goal>
-  <goal name="VC make_loop.3" expl="postcondition">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="150"/></proof>
-  </goal>
- </transf>
- </goal>
-</theory>
-</file>
-<file name="../vm.mlw">
-<theory name="ReflTransClosure" proved="true">
- <goal name="transition_star_one" proved="true">
- <proof prover="2"><result status="valid" time="0.01"/></proof>
- </goal>
- <goal name="transition_star_transitive" proved="true">
- <transf name="induction_pr" proved="true" >
-  <goal name="transition_star_transitive.0" proved="true">
-  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.00" steps="8"/></proof>
-  </goal>
-  <goal name="transition_star_transitive.1" proved="true">
-  <proof prover="0" timelimit="5" memlimit="2000"><result status="valid" time="0.00" steps="16"/></proof>
-  </goal>
- </transf>
- </goal>
-</theory>
-<theory name="Vm">
- <goal name="codeseq_at_app_right">
- <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="407"/></proof>
- </goal>
- <goal name="codeseq_at_app_left">
- <proof prover="0" timelimit="5" memlimit="2000" obsolete="true"><result status="valid" time="0.13" steps="460"/></proof>
- </goal>
- <goal name="list_app_eq_nil">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.05" steps="403"/></proof>
- </goal>
- <goal name="list_app_eq_left_cons">
- <transf name="induction_ty_lex" >
-  <goal name="list_app_eq_left_cons.0">
-  <transf name="split_goal_right" >
-   <goal name="list_app_eq_left_cons.0.0">
-   <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.17" steps="392"/></proof>
-   </goal>
-   <goal name="list_app_eq_left_cons.0.1">
-   <transf name="introduce_premises" >
-    <goal name="list_app_eq_left_cons.0.1.0">
-    <transf name="subst_all" >
-     <goal name="list_app_eq_left_cons.0.1.0.0">
-     <proof prover="4" obsolete="true"><result status="valid" time="0.13"/></proof>
-     </goal>
-    </transf>
-    </goal>
-   </transf>
-   </goal>
-  </transf>
-  </goal>
- </transf>
- </goal>
- <goal name="list_app_eq_last">
- <transf name="induction_ty_lex" >
-  <goal name="list_app_eq_last.0">
-  <transf name="split_goal_right" >
-   <goal name="list_app_eq_last.0.0">
-   <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.16" steps="405"/></proof>
-   </goal>
-   <goal name="list_app_eq_last.0.1">
-   <transf name="introduce_premises" >
-    <goal name="list_app_eq_last.0.1.0">
-    <transf name="subst_all" >
-     <goal name="list_app_eq_last.0.1.0.0">
-     <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.05" steps="451"/></proof>
-     </goal>
-    </transf>
-    </goal>
-   </transf>
-   </goal>
-  </transf>
-  </goal>
- </transf>
- </goal>
- <goal name="list_app_eq_left">
- <transf name="induction_ty_lex" >
-  <goal name="list_app_eq_left.0">
-  <transf name="split_goal_right" >
-   <goal name="list_app_eq_left.0.0">
-   <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.04" steps="154"/></proof>
-   </goal>
-   <goal name="list_app_eq_left.0.1">
-   <transf name="introduce_premises" >
-    <goal name="list_app_eq_left.0.1.0">
-    <transf name="subst_all" >
-     <goal name="list_app_eq_left.0.1.0.0">
-     <proof prover="4" obsolete="true"><result status="valid" time="0.46"/></proof>
-     </goal>
-    </transf>
-    </goal>
-   </transf>
-   </goal>
-  </transf>
-  </goal>
- </transf>
- </goal>
- <goal name="codeseq_at_right">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.06" steps="432"/></proof>
- </goal>
- <goal name="trans_deterministic_aux">
- <transf name="inversion_pr" >
-  <goal name="trans_deterministic_aux.0">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.23" steps="3225"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.1">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.25" steps="3225"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.2">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.23" steps="3227"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.3">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.35" steps="3495"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.4">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.25" steps="3240"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.5">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.25" steps="3249"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.6">
-  <proof prover="0" obsolete="true"><result status="valid" time="1.47" steps="4083"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.7">
-  </goal>
-  <goal name="trans_deterministic_aux.8">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.27" steps="3241"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.9">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="2.30" steps="3630"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.10">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.77" steps="3633"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.11">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="2.63" steps="3881"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.12">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.92" steps="3855"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.13">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.30" steps="3247"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.14">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.26" steps="3247"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.15">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.25" steps="3239"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.16">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.84" steps="3305"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.17">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.40" steps="3934"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.18">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.32" steps="3084"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.19">
-  </goal>
-  <goal name="trans_deterministic_aux.20">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="2.00" steps="3751"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.21">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.57" steps="3614"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.22">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.69" steps="3738"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.23">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="1.94" steps="3800"/></proof>
-  </goal>
-  <goal name="trans_deterministic_aux.24">
-  <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="2.09" steps="3668"/></proof>
-  </goal>
- </transf>
- </goal>
- <goal name="trans_deterministic">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.10" steps="376"/></proof>
- </goal>
- <goal name="trans_deterministic_star">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.10" steps="152"/></proof>
- </goal>
- <goal name="VC ibranch">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.01" steps="146"/></proof>
- </goal>
- <goal name="VC iaddur">
- <proof prover="0" obsolete="true"><result status="valid" time="0.03" steps="146"/></proof>
- </goal>
- <goal name="VC push">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
- </goal>
- <goal name="VC ibgt">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
- </goal>
- <goal name="VC ipopr">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.03" steps="146"/></proof>
- </goal>
- <goal name="VC iimm">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
- </goal>
- <goal name="VC ibgtr">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
- </goal>
- <goal name="VC isub">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
- </goal>
- <goal name="VC isubr">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
- </goal>
- <goal name="VC ihalt">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
- </goal>
- <goal name="VC ibler">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
- </goal>
- <goal name="VC ivar">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
- </goal>
- <goal name="VC ipushr">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.03" steps="146"/></proof>
- </goal>
- <goal name="VC iload">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
- </goal>
- <goal name="VC ibeq">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
- </goal>
- <goal name="VC ibeqr">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
- </goal>
- <goal name="VC iaddu">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.01" steps="146"/></proof>
- </goal>
- <goal name="VC iadd">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
- </goal>
- <goal name="VC ibner">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
- </goal>
- <goal name="VC ibne">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
- </goal>
- <goal name="VC istore">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
- </goal>
- <goal name="VC iconst">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
- </goal>
- <goal name="VC ible">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.01" steps="146"/></proof>
- </goal>
- <goal name="VC iaddr">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.02" steps="146"/></proof>
- </goal>
- <goal name="VC isetvar">
- <proof prover="0" memlimit="2000" obsolete="true"><result status="valid" time="0.00" steps="146"/></proof>
  </goal>
 </theory>
 </file>
 <file name="../bv_op.mlw">
 <theory name="BV_OP">
- <goal name="VC bv_add" expl="VC for bv_add" proved="true">
- <proof prover="0" timelimit="5"><result status="valid" time="0.00" steps="138"/></proof>
+ <goal name="VC bv_add" expl="VC for bv_add">
+ <proof prover="0" timelimit="5" obsolete="true"><result status="valid" time="0.00" steps="138"/></proof>
  </goal>
  <goal name="VC bv_sub" expl="VC for bv_sub">
  </goal>
 </theory>
 </file>
-<file name="../imp.mlw" proved="true">
-<theory name="Imp" proved="true">
- <goal name="ceval_deterministic_aux" proved="true">
- <transf name="induction_pr" proved="true" >
-  <goal name="ceval_deterministic_aux.0" proved="true">
-  <proof prover="0" timelimit="5"><result status="valid" time="0.14" steps="465"/></proof>
+<file name="../imp.mlw">
+<theory name="Imp">
+ <goal name="ceval_deterministic_aux">
+ <transf name="induction_pr" >
+  <goal name="ceval_deterministic_aux.0">
+  <proof prover="0" timelimit="5" obsolete="true"><result status="valid" time="0.14" steps="465"/></proof>
   </goal>
-  <goal name="ceval_deterministic_aux.1" proved="true">
-  <proof prover="0" timelimit="5"><result status="valid" time="0.15" steps="524"/></proof>
+  <goal name="ceval_deterministic_aux.1">
+  <proof prover="0" timelimit="5" obsolete="true"><result status="valid" time="0.15" steps="524"/></proof>
   </goal>
-  <goal name="ceval_deterministic_aux.2" proved="true">
-  <transf name="simplify_trivial_quantification_in_goal" proved="true" >
-   <goal name="ceval_deterministic_aux.2.0" proved="true">
-   <proof prover="0" timelimit="5"><result status="valid" time="0.22" steps="722"/></proof>
+  <goal name="ceval_deterministic_aux.2">
+  <transf name="simplify_trivial_quantification_in_goal" >
+   <goal name="ceval_deterministic_aux.2.0">
+   <proof prover="0" timelimit="5" obsolete="true"><result status="valid" time="0.22" steps="722"/></proof>
    </goal>
   </transf>
   </goal>
-  <goal name="ceval_deterministic_aux.3" proved="true">
-  <transf name="simplify_trivial_quantification_in_goal" proved="true" >
-   <goal name="ceval_deterministic_aux.3.0" proved="true">
-   <proof prover="0" timelimit="5"><result status="valid" time="0.19" steps="613"/></proof>
+  <goal name="ceval_deterministic_aux.3">
+  <transf name="simplify_trivial_quantification_in_goal" >
+   <goal name="ceval_deterministic_aux.3.0">
+   <proof prover="0" timelimit="5" obsolete="true"><result status="valid" time="0.19" steps="613"/></proof>
    </goal>
   </transf>
   </goal>
-  <goal name="ceval_deterministic_aux.4" proved="true">
-  <transf name="simplify_trivial_quantification_in_goal" proved="true" >
-   <goal name="ceval_deterministic_aux.4.0" proved="true">
-   <proof prover="0" timelimit="5"><result status="valid" time="0.17" steps="671"/></proof>
+  <goal name="ceval_deterministic_aux.4">
+  <transf name="simplify_trivial_quantification_in_goal" >
+   <goal name="ceval_deterministic_aux.4.0">
+   <proof prover="0" timelimit="5" obsolete="true"><result status="valid" time="0.17" steps="671"/></proof>
    </goal>
   </transf>
   </goal>
-  <goal name="ceval_deterministic_aux.5" proved="true">
-  <proof prover="0" timelimit="5"><result status="valid" time="0.16" steps="501"/></proof>
+  <goal name="ceval_deterministic_aux.5">
+  <proof prover="0" timelimit="5" obsolete="true"><result status="valid" time="0.16" steps="501"/></proof>
   </goal>
-  <goal name="ceval_deterministic_aux.6" proved="true">
-  <transf name="simplify_trivial_quantification_in_goal" proved="true" >
-   <goal name="ceval_deterministic_aux.6.0" proved="true">
-   <proof prover="0" timelimit="5"><result status="valid" time="0.21" steps="805"/></proof>
+  <goal name="ceval_deterministic_aux.6">
+  <transf name="simplify_trivial_quantification_in_goal" >
+   <goal name="ceval_deterministic_aux.6.0">
+   <proof prover="0" timelimit="5" obsolete="true"><result status="valid" time="0.21" steps="805"/></proof>
    </goal>
   </transf>
   </goal>
  </transf>
  </goal>
- <goal name="ceval_deterministic" proved="true">
- <proof prover="0" timelimit="5"><result status="valid" time="0.12" steps="374"/></proof>
+ <goal name="ceval_deterministic">
+ <proof prover="0" timelimit="5" obsolete="true"><result status="valid" time="0.12" steps="374"/></proof>
  </goal>
 </theory>
 </file>
