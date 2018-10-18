@@ -13,18 +13,6 @@ module BV_OP
     BV32.to_int v 
   
   meta rewrite_def function bv_add
-  
-  let function bv_sub i1 i2:int 
-    ensures { 
-      result = BV32.to_int (BV32.sub (BV32.of_int i1) (BV32.of_int i2))
-    }
-  =
-    let v1: BV32.t = BV32.of_int i1 in
-    let v2: BV32.t = BV32.of_int i2 in
-    let v: BV32.t = BV32.sub v1 v2 in
-    BV32.to_int v 
-  
-  meta rewrite_def function bv_sub
 
   (*meta rewrite_def function bv_add
   (* stupid test *)

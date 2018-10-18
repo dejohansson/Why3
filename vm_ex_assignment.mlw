@@ -83,6 +83,8 @@ module Vm_Ex
           VMS (p + 1) (write r x3 (bv_add (read r x1) (read r x2))) s m
       | Isubr x1 x2 x3 ->
           VMS (p + 1) (write r x3 (read r x1 - read r x2)) s m
+      | Isubur x1 x2 x3 ->
+          VMS (p + 1) (write r x3 (bv_sub (read r x1) (read r x2))) s m
       | Ibeqr x1 x2 ofs -> 
           match (read r x1) = (read r x2) with
           | True -> VMS (p + 1 + ofs) r s m
@@ -128,6 +130,11 @@ module Vm_Ex
           let (v2, stack2) = pop stack1 in
           let dif = v2 - v1 in
           VMS (p + 1) r (push dif stack2) m
+      | Isubu ->
+          let (v1, stack1) = pop s in
+          let (v2, stack2) = pop stack1 in
+          let sum = bv_sub v2 v1 in
+          VMS (p + 1) r (push sum stack2) m
       | Ibeq ofs ->
           let (v1, stack1) = pop s in
           let (v2, stack2) = pop stack1 in

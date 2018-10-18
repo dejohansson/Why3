@@ -83,11 +83,29 @@ module Vm_Ex
           VMS (p + 1) (write r x3 (bv_add (read r x1) (read r x2))) s m
       | Isubr x1 x2 x3 ->
           VMS (p + 1) (write r x3 (read r x1 - read r x2)) s m
-      (*| Ibeqr x1 x2 ofs -> 
+      | Isubur x1 x2 x3 ->
+          VMS (p + 1) (write r x3 (bv_sub (read r x1) (read r x2))) s m
+      | Ibeqr x1 x2 ofs -> 
+          match (read r x1) = (read r x2) with
+          | True -> VMS (p + 1 + ofs) r s m
+          | False -> VMS (p + 1) r s m
+          end
       | Ibner x1 x2 ofs -> 
+          match (read r x1) <> (read r x2) with
+          | True -> VMS (p + 1 + ofs) r s m
+          | False -> VMS (p + 1) r s m
+          end
       | Ibler x1 x2 ofs -> 
+          match (read r x1) <= (read r x2) with
+          | True -> VMS (p + 1 + ofs) r s m
+          | False -> VMS (p + 1) r s m
+          end
       | Ibgtr x1 x2 ofs -> 
-      *)
+          match (read r x1) > (read r x2) with
+          | True -> VMS (p + 1 + ofs) r s m
+          | False -> VMS (p + 1) r s m
+          end
+      
       
       (* original instructions *)
       | Iconst n    -> (* push n on stack *)

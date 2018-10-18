@@ -175,27 +175,6 @@ module VM_instr_spec
     let c = $ ifunf trivial_pre (isubr x1 x2 x3) (isubr_fun x1 x2 x3) in
     hoare trivial_pre c (isubr_post x1 x2 x3)
   
-  (* Isubur spec *)
-  function isubur_post (x1 x2 x3:idr) : post 'a =
-    fun _ p ms ms' -> forall s r m. 
-      ms  = VMS p r s m -> 
-      ms' = VMS (p+1) (write r x3 (bv_sub (read r x1) (read r x2))) s m
-  meta rewrite_def function isubur_post
-
-  function isubur_fun (x1 x2 x3:idr) : machine_state -> machine_state =
-    fun ms -> 
-      let (VMS p r s m) = ms in 
-      VMS (p+1) (write r x3 (bv_sub (read r x1) (read r x2))) s m
-  meta rewrite_def function isubur_fun
-
-  let isuburf (x1 x2 x3: idr) : hl 'a
-    ensures { result.pre --> trivial_pre }
-    ensures { result.post --> isubur_post x1 x2 x3}
-    ensures { result.code.length --> 1 }
-  = 
-    let c = $ ifunf trivial_pre (isubur x1 x2 x3) (isubur_fun x1 x2 x3) in
-    hoare trivial_pre c (isubur_post x1 x2 x3)
-  
   (* Ibeqr spec *)
   function ibeqr_post (x1:idr) (x2:idr) (ofs:int): post 'a =
     fun _ p ms ms' -> forall s r m. 
