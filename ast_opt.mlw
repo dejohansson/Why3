@@ -1,0 +1,69 @@
+module Imp_ex
+
+  use imp.Imp
+  use state.State
+  use bool.Bool
+  use int.Int
+  use bv_op.BV_OP 
+
+  let rec aopt_ex (e:aexpr) : aexpr 
+    variant { e }
+    ensures { forall st. aeval st result = aeval st e }
+  =
+    match e with
+      | Anum n      -> Anum n
+      | Avar x      -> Avar x
+      | Aadd e1 e2  -> Aadd (aopt_ex e1) (aopt_ex e2)
+      | Aaddu e1 e2 -> 
+          match (aopt_ex e1), (aopt_ex e2) with
+            | Anum e1, Anum e2 -> Anum (bv_add e1 e2)
+            | a, b -> Aaddu a b
+          end
+      | Asub e1 e2  -> Asub (aopt_ex e1) (aopt_ex e2)
+    end
+
+
+  let rec bopt_ex (b:bexpr) : bexpr 
+    variant { b }
+    ensures { forall st. beval st result = beval st b }
+  =
+    match b with
+      | Btrue      -> Btrue
+      | Bfalse     -> Bfalse
+      | Bnot b'    -> Bnot (bopt_ex b')
+      | Band b1 b2 -> 
+          match bopt_ex b1, bopt_ex b2 with
+            | Btrue, Btrue -> Btrue
+            | Bfalse, _ -> Bfalse
+            | _, Bfalse -> Bfalse
+            | Btrue, x -> x
+            | x, Btrue -> x
+            (*| x, x -> x*)
+            | x, y -> Band x y
+          end
+      | Beq a1 a2  -> Beq (aopt_ex a1) (aopt_ex a2)
+      | Ble a1 a2  -> Ble (aopt_ex a1) (aopt_ex a2)
+    end
+
+
+  let rec copt_ex (c:com): com
+    diverges  
+    ensures { forall st r. ceval st result r = ceval st c r}
+    =
+    match c with
+    | Cskip -> Cskip
+    | Cassign id aexpr -> Cassign id (aopt_ex aexpr)
+    | Cseq c1 c2 -> Cseq (copt_ex c1) (copt_ex c2)
+    | Cif bexpr c1 c2 -> 
+      match bopt_ex bexpr with
+      | Btrue -> copt_ex c1
+      | Bfalse -> copt_ex c2
+      | b -> Cif b (copt_ex c1) (copt_ex c2)
+      end
+    | Cwhile bexpr com ->
+      match bopt_ex bexpr with
+      | Bfalse -> Cskip
+      | b -> Cwhile b (copt_ex com)
+      end
+    end
+end

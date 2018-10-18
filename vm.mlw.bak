@@ -74,7 +74,7 @@ theory Vm
   | Ibranch ofs        (* skip ofs instructions                               *)
   | Iadd               (* pop two values, push their sum                      *)
   | Iaddu              (* pop two values, push their sum (wrapping)           *)
-  | Isub               (* pop two values, push their difference                *)
+  | Isub               (* pop two values, push their difference               *)
   | Ibeq ofs           (* pop n2, pop n1, skip ofs forward if n1 =  n2        *)
   | Ibne ofs           (* pop n2, pop n1, skip ofs forward if n1 <> n2        *)
   | Ible ofs           (* pop n2, pop n1, skip ofs forward if n1 <= n2        *)
