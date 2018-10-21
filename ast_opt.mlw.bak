@@ -61,7 +61,7 @@ module Imp_ex
 
   let rec copt_ex (c:com): com
     diverges  
-    ensures { forall st st'. ceval st result st' = ceval st c st'}
+    ensures { forall st1 st2. ceval st1 result st2 = ceval st1 c st2}
     =
     match c with
     | Cskip -> Cskip
