@@ -4,50 +4,95 @@
 <why3session shape_version="5">
 <prover id="0" name="Alt-Ergo" version="2.2.0" timelimit="5" steplimit="0" memlimit="1000"/>
 <prover id="1" name="Z3" version="4.7.1" alternative="counterexamples" timelimit="5" steplimit="0" memlimit="1000"/>
-<file name="../ast_opt.mlw">
-<theory name="Imp_ex">
+<prover id="2" name="Eprover" version="2.1" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="3" name="CVC4" version="1.6" alternative="counterexamples" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="4" name="CVC4" version="1.6" timelimit="5" steplimit="0" memlimit="1000"/>
+<file name="../ast_opt.mlw" proved="true">
+<theory name="Imp_ex" proved="true">
  <goal name="VC aopt_ex" expl="VC for aopt_ex" proved="true">
- <proof prover="0"><result status="valid" time="0.39" steps="1302"/></proof>
+ <proof prover="0"><result status="valid" time="0.57" steps="1878"/></proof>
  </goal>
  <goal name="VC bopt_ex" expl="VC for bopt_ex" proved="true">
  <proof prover="1"><result status="valid" time="0.04"/></proof>
  </goal>
- <goal name="VC copt_ex" expl="VC for copt_ex">
- <proof prover="0" obsolete="true"><result status="timeout" time="5.00"/></proof>
- <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
- <transf name="split_vc" >
+ <goal name="VC copt_ex" expl="VC for copt_ex" proved="true">
+ <transf name="split_goal_right" proved="true" >
   <goal name="VC copt_ex.0" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.02" steps="144"/></proof>
+  <proof prover="0"><result status="valid" time="0.03" steps="146"/></proof>
   </goal>
   <goal name="VC copt_ex.1" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.29" steps="599"/></proof>
+  <proof prover="0"><result status="valid" time="0.21" steps="603"/></proof>
   </goal>
   <goal name="VC copt_ex.2" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.26" steps="627"/></proof>
+  <proof prover="0"><result status="valid" time="0.24" steps="630"/></proof>
   </goal>
   <goal name="VC copt_ex.3" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.18" steps="518"/></proof>
+  <proof prover="0"><result status="valid" time="0.16" steps="610"/></proof>
   </goal>
   <goal name="VC copt_ex.4" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.18" steps="528"/></proof>
+  <proof prover="0"><result status="valid" time="0.17" steps="615"/></proof>
   </goal>
   <goal name="VC copt_ex.5" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.29" steps="969"/></proof>
+  <proof prover="0"><result status="valid" time="0.24" steps="964"/></proof>
   </goal>
   <goal name="VC copt_ex.6" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" time="0.23" steps="645"/></proof>
+  <proof prover="0"><result status="valid" time="0.21" steps="650"/></proof>
   </goal>
-  <goal name="VC copt_ex.7" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="timeout" time="5.00"/></proof>
-  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
-  <transf name="split_vc" >
-   <goal name="VC copt_ex.7.0" expl="postcondition">
-   <proof prover="0"><result status="timeout" time="5.00"/></proof>
-   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <goal name="VC copt_ex.7" expl="postcondition" proved="true">
+  <transf name="split_goal_right" proved="true" >
+   <goal name="VC copt_ex.7.0" expl="postcondition" proved="true">
+   <transf name="induction_pr" proved="true" >
+    <goal name="VC copt_ex.7.0.0" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.06" steps="155"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.0.1" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.13" steps="155"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.0.2" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.09" steps="159"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.0.3" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.09" steps="159"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.0.4" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.10" steps="159"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.0.5" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.12" steps="402"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.0.6" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="timeout" time="5.00"/></proof>
+    <proof prover="1"><result status="timeout" time="5.00"/></proof>
+    <proof prover="2"><result status="timeout" time="5.00"/></proof>
+    <proof prover="3"><result status="timeout" time="5.00"/></proof>
+    <proof prover="4"><result status="valid" time="0.12"/></proof>
+    </goal>
+   </transf>
    </goal>
-   <goal name="VC copt_ex.7.1" expl="postcondition">
-   <proof prover="0"><result status="timeout" time="5.00"/></proof>
-   <proof prover="1"><result status="timeout" time="5.00"/></proof>
+   <goal name="VC copt_ex.7.1" expl="postcondition" proved="true">
+   <transf name="induction_pr" proved="true" >
+    <goal name="VC copt_ex.7.1.0" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.08" steps="155"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.1.1" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.14" steps="155"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.1.2" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.11" steps="161"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.1.3" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.09" steps="160"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.1.4" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.09" steps="160"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.1.5" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.11" steps="402"/></proof>
+    </goal>
+    <goal name="VC copt_ex.7.1.6" expl="VC for copt_ex" proved="true">
+    <proof prover="0"><result status="valid" time="0.12" steps="419"/></proof>
+    </goal>
+   </transf>
    </goal>
   </transf>
   </goal>
@@ -58,7 +103,7 @@
 <file name="../imp_ex_assignment.mlw" proved="true">
 <theory name="Imp_ex" proved="true">
  <goal name="VC aeval_ex" expl="VC for aeval_ex" proved="true">
- <proof prover="0"><result status="valid" time="0.25" steps="843"/></proof>
+ <proof prover="0"><result status="valid" time="0.25" steps="1118"/></proof>
  </goal>
  <goal name="VC beval_ex" expl="VC for beval_ex" proved="true">
  <proof prover="0"><result status="valid" time="0.19" steps="705"/></proof>
@@ -70,6 +115,12 @@
 </file>
 <file name="../imp.mlw">
 <theory name="Imp">
+ <goal name="VC eq_a" expl="VC for eq_a" proved="true">
+ <proof prover="0"><result status="valid" time="0.58" steps="1877"/></proof>
+ </goal>
+ <goal name="VC eq_b" expl="VC for eq_b" proved="true">
+ <proof prover="0"><result status="valid" time="0.36" steps="1242"/></proof>
+ </goal>
  <goal name="ceval_deterministic_aux">
  </goal>
  <goal name="ceval_deterministic">

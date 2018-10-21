@@ -77,6 +77,33 @@ theory Imp
     | E_WhileLoop : forall mi mj mf cond body. beval mi cond ->
         ceval mi body mj -> ceval mj (Cwhile cond body) mf ->
           ceval mi (Cwhile cond body) mf
+  
+  (* Check for structural equality *)
+  let rec eq_a(a b:aexpr) =
+    variant { a, b }
+    ensures { result = (a = b) }
+    match (a, b) with
+    | (Anum i1, Anum i2) -> i1 = i2
+    | (Avar (Id id1), Avar (Id id2)) -> id1 = id2
+    | (Aadd a1 a2, Aadd b1 b2) -> eq_a a1 b1 && eq_a a2 b2
+    | (Asub a1 a2, Asub b1 b2) -> eq_a a1 b1 && eq_a a2 b2  
+    | (Aaddu a1 a2, Aaddu b1 b2) -> eq_a a1 b1 && eq_a a2 b2
+    | (Asubu a1 a2, Asubu b1 b2) -> eq_a a1 b1 && eq_a a2 b2   
+    | _ -> false
+    end
+    
+  let rec eq_b(a b:bexpr) =
+    variant { a, b }
+    ensures { result = (a = b) }
+    match (a, b) with
+    | Btrue, Btrue -> true
+    | Bfalse, Bfalse -> true
+    | Bnot x, Bnot y -> eq_b x y
+    | Band x y, Band a b -> eq_b x a && eq_b y b
+    | Beq x y, Beq a b -> eq_a x a && eq_a y b
+    | Ble x y, Ble a b -> eq_a x a && eq_a y b
+    | _ -> false
+    end
 
 
   (* Determinstic semantics *)

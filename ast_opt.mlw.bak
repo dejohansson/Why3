@@ -20,6 +20,15 @@ module Imp_ex
             | a, b -> Aaddu a b
           end
       | Asub e1 e2  -> Asub (aopt_ex e1) (aopt_ex e2)
+      | Asubu e1 e2 -> 
+          match (aopt_ex e1), (aopt_ex e2) with
+            | Anum x, Anum y -> Anum (bv_sub x y)
+            | a, b -> 
+              match eq_a a b with 
+                | True -> Anum 0
+                | False -> Asubu a b
+              end
+          end
     end
 
 
@@ -34,12 +43,16 @@ module Imp_ex
       | Band b1 b2 -> 
           match bopt_ex b1, bopt_ex b2 with
             | Btrue, Btrue -> Btrue
+            | Bfalse, Bfalse -> Bfalse
             | Bfalse, _ -> Bfalse
             | _, Bfalse -> Bfalse
             | Btrue, x -> x
             | x, Btrue -> x
-            (*| x, x -> x*)
-            | x, y -> Band x y
+            | x, y ->
+              match eq_b x y with 
+                | True -> x
+                | False -> Band x y
+              end
           end
       | Beq a1 a2  -> Beq (aopt_ex a1) (aopt_ex a2)
       | Ble a1 a2  -> Ble (aopt_ex a1) (aopt_ex a2)
@@ -48,7 +61,7 @@ module Imp_ex
 
   let rec copt_ex (c:com): com
     diverges  
-    ensures { forall st r. ceval st result r <-> ceval st c r}
+    ensures { forall st st'. ceval st result st' = ceval st c st'}
     =
     match c with
     | Cskip -> Cskip
