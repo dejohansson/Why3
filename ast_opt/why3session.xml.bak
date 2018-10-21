@@ -3,34 +3,55 @@
 "http://why3.lri.fr/why3session.dtd">
 <why3session shape_version="5">
 <prover id="0" name="Alt-Ergo" version="2.2.0" timelimit="5" steplimit="0" memlimit="1000"/>
-<file name="../ast_opt.mlw" proved="true">
+<prover id="1" name="Z3" version="4.7.1" alternative="counterexamples" timelimit="5" steplimit="0" memlimit="1000"/>
+<file name="../ast_opt.mlw">
 <theory name="Imp_ex">
- <goal name="VC aopt_ex">
+ <goal name="VC aopt_ex" expl="VC for aopt_ex" proved="true">
  <proof prover="0"><result status="valid" time="0.39" steps="1302"/></proof>
+ </goal>
+ <goal name="VC bopt_ex" expl="VC for bopt_ex" proved="true">
+ <proof prover="1"><result status="valid" time="0.04"/></proof>
+ </goal>
+ <goal name="VC copt_ex" expl="VC for copt_ex">
+ <proof prover="0" obsolete="true"><result status="timeout" time="5.00"/></proof>
+ <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
  <transf name="split_vc" >
-  <goal name="VC aopt_ex.0">
+  <goal name="VC copt_ex.0" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.02" steps="144"/></proof>
   </goal>
-  <goal name="VC aopt_ex.1">
+  <goal name="VC copt_ex.1" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.29" steps="599"/></proof>
   </goal>
-  <goal name="VC aopt_ex.2">
+  <goal name="VC copt_ex.2" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.26" steps="627"/></proof>
   </goal>
-  <goal name="VC aopt_ex.3">
+  <goal name="VC copt_ex.3" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.18" steps="518"/></proof>
   </goal>
-  <goal name="VC aopt_ex.4">
+  <goal name="VC copt_ex.4" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.18" steps="528"/></proof>
   </goal>
-  <goal name="VC aopt_ex.5">
+  <goal name="VC copt_ex.5" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.29" steps="969"/></proof>
   </goal>
-  <goal name="VC aopt_ex.6">
+  <goal name="VC copt_ex.6" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" time="0.23" steps="645"/></proof>
   </goal>
-  <goal name="VC aopt_ex.5">
-  </goal>
-  <goal name="VC aopt_ex.4">
+  <goal name="VC copt_ex.7" expl="postcondition">
+  <proof prover="0" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+  <transf name="split_vc" >
+   <goal name="VC copt_ex.7.0" expl="postcondition">
+   <proof prover="0"><result status="timeout" time="5.00"/></proof>
+   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
+   </goal>
+   <goal name="VC copt_ex.7.1" expl="postcondition">
+   <proof prover="0"><result status="timeout" time="5.00"/></proof>
+   <proof prover="1"><result status="timeout" time="5.00"/></proof>
+   </goal>
+  </transf>
   </goal>
  </transf>
- </goal>
- <goal name="VC ceval_ex">
- </goal>
- <goal name="VC beval_ex">
  </goal>
 </theory>
 </file>

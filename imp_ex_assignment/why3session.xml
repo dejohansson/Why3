@@ -5,30 +5,30 @@
 <prover id="0" name="Alt-Ergo" version="2.2.0" timelimit="5" steplimit="0" memlimit="1000"/>
 <file name="../state.mlw">
 <theory name="State">
- <goal name="VC get" expl="VC for get">
- </goal>
- <goal name="VC set" expl="VC for set">
- </goal>
- <goal name="VC mixfix []" expl="VC for mixfix []">
- </goal>
- <goal name="VC mixfix [&lt;-]" expl="VC for mixfix [<-]">
- </goal>
  <goal name="VC const" expl="VC for const">
+ </goal>
+ <goal name="VC set">
+ </goal>
+ <goal name="VC mixfix []">
+ </goal>
+ <goal name="VC mixfix [&lt;-]">
+ </goal>
+ <goal name="VC get">
  </goal>
 </theory>
 <theory name="Reg">
- <goal name="VC read" expl="VC for read">
- </goal>
- <goal name="VC write" expl="VC for write">
- </goal>
  <goal name="VC const" expl="VC for const">
+ </goal>
+ <goal name="VC write">
+ </goal>
+ <goal name="VC read">
  </goal>
 </theory>
 </file>
 <file name="../imp_ex_assignment.mlw" proved="true">
 <theory name="Imp_ex" proved="true">
  <goal name="VC aeval_ex" expl="VC for aeval_ex" proved="true">
- <proof prover="0"><result status="valid" time="0.25" steps="843"/></proof>
+ <proof prover="0"><result status="valid" time="0.34" steps="1118"/></proof>
  </goal>
  <goal name="VC beval_ex" expl="VC for beval_ex" proved="true">
  <proof prover="0"><result status="valid" time="0.19" steps="705"/></proof>

@@ -38,18 +38,6 @@
   <proof prover="0"><result status="valid" time="0.23" steps="645"/></proof>
   </goal>
   <goal name="VC copt_ex.7" expl="postcondition">
-  <proof prover="0" obsolete="true"><result status="timeout" time="5.00"/></proof>
-  <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
-  <transf name="split_vc" >
-   <goal name="VC copt_ex.7.0" expl="postcondition">
-   <proof prover="0"><result status="timeout" time="5.00"/></proof>
-   <proof prover="1" obsolete="true"><result status="timeout" time="5.00"/></proof>
-   </goal>
-   <goal name="VC copt_ex.7.1" expl="postcondition">
-   <proof prover="0"><result status="timeout" time="5.00"/></proof>
-   <proof prover="1"><result status="timeout" time="5.00"/></proof>
-   </goal>
-  </transf>
   </goal>
  </transf>
  </goal>
